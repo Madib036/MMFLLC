@@ -1,4 +1,4 @@
-![Auto Assign](https://github.com/Malesforfemales22/demo-repository/actions/workflows/auto-assign.yml/badge.svg)
+![Auto Assign](https://github.com/Madib036/MMFLLC/blob/main/.github%2Fdependabot.yml)
 
 ![Proof HTML](https://github.com/Malesforfemales22/demo-repository/actions/workflows/proof-html.yml/badge.svg)
 
