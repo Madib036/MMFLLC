@@ -7,6 +7,6 @@
     schedule: "daily"
     interval: "weekly"
     version: 11
-    updates: 2
+    updates: 1
     package-ecosystem: "javascript"
     directory: "/" 
