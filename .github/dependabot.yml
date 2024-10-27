@@ -1,11 +1,12 @@
 # To get started with Dependabot version updates, you'll need to specify which
 # package ecosystems to update and where the package manifests are located.
 # Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
-
-version: 11
-updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "weekly"
+(https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file)
+# See documentation for possible values 
+# Location of package manifests
+    schedule: "daily"
+    interval: "weekly"
+    version: 11
+    updates: 2
+    package-ecosystem: "javascript"
+    directory: "/" 
