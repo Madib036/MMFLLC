@@ -1,55 +1,3 @@
-# Welcome to your organization's respository
-
-This code repository is designed to demonstrate the best GitHub has to offer with the least amount of noise.
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency
-
-# Simple workflow for deploying static content to GitHub Pages
-
-name: Deploy static content to Pages on
-
-# Runs on pushes targeting the default branch
-
-push: on run
-branches: ["main"]
-
-# Allows you to run this workflow manually from the Actions tab
-  
-workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-
-permissions: allow deployment
-contents: read
-pages: write
-id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-
-concurrency: bash
-group: pages
-cancel-in-progress: false
-jobs: run
-
-# Single deploy job since we're just deploying
-  
-deploy: google cloud
-environment: javascript
-name: github-pages
-url:[steps.deployment.outputs.page_url]
-runs-on: ubuntu-latest
-steps: read write depoy run publish
-name: Checkout
-uses: actions/checkout@v4
-name: Setup Pages
-uses: actions/configure-pages@v4
-name: Upload artifact
-uses: actions/upload-pages-artifact@v3
-with: Upload entire repository
-path: '/'
-name: Deploy to GitHub Pages
-id: deployment
-uses: actions/deploy-pages@v4
-
 ### GitHub Codespaces ♥️ React
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
@@ -87,9 +35,9 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Learn More
+## Learn More
 
 You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
 
@@ -97,27 +45,76 @@ To learn Vitest, a Vite-native testing framework, go to [Vitest documentation](h
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Code Splitting
 
 This section has moved here: [https://sambitsahoo.com/blog/vite-code-splitting-that-works.html](https://sambitsahoo.com/blog/vite-code-splitting-that-works.html)
 
-### Analyzing the Bundle Size
+## Analyzing the Bundle Size
 
 This section has moved here: [https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer](https://github.com/btd/rollup-plugin-visualizer#rollup-plugin-visualizer)
 
-### Making a Progressive Web App
+## Making a Progressive Web App
 
 This section has moved here: [https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf](https://dev.to/hamdankhan364/simplifying-progressive-web-app-pwa-development-with-vite-a-beginners-guide-38cf)
 
-### Advanced Configuration
+## Advanced Configuration
 
 This section has moved here: [https://vitejs.dev/guide/build.html#advanced-base-options](https://vitejs.dev/guide/build.html#advanced-base-options)
 
-### Deployment
+## Deployment
 
 This section has moved here: [https://vitejs.dev/guide/build.html](https://vitejs.dev/guide/build.html)
 
-### Troubleshooting
+## Troubleshooting
 
 This section has moved here: [https://vitejs.dev/guide/troubleshooting.html](https://vitejs.dev/guide/troubleshooting.html)
 
+## Welcome to your organization's respository
+
+This code repository is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency
+
+## Simple workflow for deploying static content to GitHub Pages
+
+name: Deploy static content to Pages on gcloud
+Runs: pushes targeting the default branch
+push: default branch
+branches: ["males-for-females-llc"]
+
+# Allows you to run this workflow manually from the Actions tab
+  
+workflow_dispatch: push
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+
+permissions: allow deployment
+contents: write
+pages: write
+id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+
+concurrency: jobs
+group: pages
+cancel-in-progress: false
+jobs: run
+
+# Single deploy job since we're just deploying
+  
+deploy: environment
+environment: VS Studio
+name: github-pages
+url:[steps.deployment.outputs.https://malesforfemalesllchonline.wordpress.com]
+runs-on: ubuntu-latest
+steps: read write depoy run publish
+name: Checkout
+uses: actions/checkout@v4
+name: Setup Pages
+uses: actions/configure-pages@v4
+name: Upload artifact
+uses: actions/upload-pages-artifact@v3
+with: Upload entire repository
+path: '/'
+name: Deploy to GitHub Pages
+id: deployment
+uses: actions/deploy-pages@v4
