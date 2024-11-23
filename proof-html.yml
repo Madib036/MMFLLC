@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: anishathalye/proof-html@v1.1.0
         with:
-          directory: ./
+          directory: decisive-force-297918
