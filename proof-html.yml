@@ -1,11 +1,31 @@
+gh repo clone Madib036 
+name: Auto Assign
+on: powershell
+issues: debug
+types: [opened]
+pull_request:
+types: [opened]
+jobs: write
+run: vs studio
+runs-on: ubuntu-latest
+permissions:
+issues: write
+pull-requests: write
+steps: debug
+name: 'Auto-assign issue'
+uses: pozil/auto-assign-issue@v1
+with: 
+repo-token: ${{ secrets.GITHUB_TOKEN }}
+assignees: Madib036
+numOfAssignee: 1
 name: Proof HTML
-on:
-  push:
-  workflow_dispatch:
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: anishathalye/proof-html@v1.1.0
-        with:
-          directory: decisive-force-297918
+on: static
+push: deploy
+workflow_dispatch:
+jobs: run
+build: environment
+runs-on: ubuntu-latest
+steps: write
+uses: anishathalye/proof-html@v1.1.0
+with: javascript
+directory: root
