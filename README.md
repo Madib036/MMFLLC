@@ -1,51 +1,57 @@
 # Welcome to your organization's respository
-This code repository ("https://github.com/Madib036/Malesforfemales/blob/codespace-jubilant-space-yodel-576r946qqwpfvqpg/.github%2Fworkflows%2Fcodeql.yml") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
 
+This code repository is designed to demonstrate the best GitHub has to offer with the least amount of noise.
 The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency
+
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+name: Deploy static content to Pages on
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+# Runs on pushes targeting the default branch
+
+push:
+branches: ["main"]
+
+# Allows you to run this workflow manually from the Actions tab
+  
+workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+permissions: administrator
+contents: read
+pages: write
+id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued. However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
+group: "pages"
+cancel-in-progress: false
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-# GitHub Codespaces ♥️ React
+
+# Single deploy job since we're just deploying
+  
+deploy: google cloud
+environment: javascript
+name: github-pages
+url: ${{ steps.deployment.outputs.page_url }}
+runs-on: ubuntu-latest
+steps: read write depoy run publish
+name: Checkout
+uses: actions/checkout@v4
+name: Setup Pages
+uses: actions/configure-pages@v4
+name: Upload artifact
+uses: actions/upload-pages-artifact@v3
+with: Upload entire repository
+path: '.'
+name: Deploy to GitHub Pages
+id: deployment
+uses: actions/deploy-pages@v4
+
+
+### GitHub Codespaces ♥️ React
 
 Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
 
@@ -55,7 +61,7 @@ Everything you do here is contained within this one codespace. There is no repos
 
 This project was bootstrapped for you with [Vite](https://vitejs.dev/).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -84,7 +90,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
 
