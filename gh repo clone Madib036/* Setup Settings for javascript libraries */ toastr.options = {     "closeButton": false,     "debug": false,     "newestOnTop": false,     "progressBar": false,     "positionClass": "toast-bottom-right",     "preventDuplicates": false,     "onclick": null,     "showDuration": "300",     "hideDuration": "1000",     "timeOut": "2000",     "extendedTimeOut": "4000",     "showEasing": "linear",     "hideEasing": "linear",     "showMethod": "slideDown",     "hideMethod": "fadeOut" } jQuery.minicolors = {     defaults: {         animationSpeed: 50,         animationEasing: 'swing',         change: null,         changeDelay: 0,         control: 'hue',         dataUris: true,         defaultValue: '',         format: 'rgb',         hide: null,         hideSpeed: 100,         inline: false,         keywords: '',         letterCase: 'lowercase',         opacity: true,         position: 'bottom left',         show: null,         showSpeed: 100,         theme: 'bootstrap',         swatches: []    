@@ -1,6 +1,6 @@
 * Setup Settings for javascript libraries
 
-    toastr.options =
+    "toastr.options" =
     "closeButton": false,
     "debug": false,
     "newestOnTop": false,
@@ -16,14 +16,12 @@
     "hideEasing": "linear",
     "showMethod": "slideDown",
     "hideMethod": "fadeOut"
-}
-jQuery.minicolors = {
-    defaults: {
-        animationSpeed: 50,
-        animationEasing: 'swing',
-        change: null,
-        changeDelay: 0,
-        control: 'hue',
+    "jQuery.minicolors" = "defaults"              
+    "animationSpeed": 50,
+     animationEasing: 'swing',
+     change: null,
+     changeDelay: 0,
+     control: 'hue',
         dataUris: true,
         defaultValue: '',
         format: 'rgb',
