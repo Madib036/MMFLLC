@@ -1,4 +1,4 @@
-# Setup Settings for javascript libraries
+* Setup Settings for javascript libraries
 
     {{toastr.options = {
     "closeButton": false,
