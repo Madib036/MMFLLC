@@ -1,5 +1,6 @@
-/* Setup Settings for javascript libraries */
-toastr.options = {
+# Setup Settings for javascript libraries
+
+*  toastr.options = {
     "closeButton": false,
     "debug": false,
     "newestOnTop": false,
