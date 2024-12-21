@@ -14,9 +14,8 @@
     "hideEasing": "linear",
     "showMethod": "slideDown",
     "hideMethod": "fadeOut"
-}
-jQuery.minicolors = {
-    defaults: {
+"jQuery.minicolors = 
+    defaults:
         animationSpeed: 50,
         animationEasing: 'swing',
         change: null,
@@ -36,8 +35,6 @@ jQuery.minicolors = {
         showSpeed: 100,
         theme: 'bootstrap',
         swatches: []
-    }
-};
 var titan_editor_tinymce_init = function(){
 tinymce.editors=[];
 tinymce.init({
@@ -56,8 +53,4 @@ tinymce.init({
     ],
    setup : function(ed) {
 		  ed.on('change', function(e) {
-	      	temSaveRichTextEditor(ed);
-		  });
-	}
-});
-}
+	      	temSaveRichTextEditor(ed)
