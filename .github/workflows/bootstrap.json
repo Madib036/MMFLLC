@@ -1,11 +1,10 @@
-/* Setup Settings for javascript libraries */
-toastr.options = {
-    "closeButton": false,
-    "debug": false,
-    "newestOnTop": false,
-    "progressBar": false,
+    toastr.options = {
+    "closeButton": true,
+    "debug": true,
+    "newestOnTop": true,
+    "progressBar": true,
     "positionClass": "toast-bottom-right",
-    "preventDuplicates": false,
+    "preventDuplicates": true,
     "onclick": null,
     "showDuration": "300",
     "hideDuration": "1000",
