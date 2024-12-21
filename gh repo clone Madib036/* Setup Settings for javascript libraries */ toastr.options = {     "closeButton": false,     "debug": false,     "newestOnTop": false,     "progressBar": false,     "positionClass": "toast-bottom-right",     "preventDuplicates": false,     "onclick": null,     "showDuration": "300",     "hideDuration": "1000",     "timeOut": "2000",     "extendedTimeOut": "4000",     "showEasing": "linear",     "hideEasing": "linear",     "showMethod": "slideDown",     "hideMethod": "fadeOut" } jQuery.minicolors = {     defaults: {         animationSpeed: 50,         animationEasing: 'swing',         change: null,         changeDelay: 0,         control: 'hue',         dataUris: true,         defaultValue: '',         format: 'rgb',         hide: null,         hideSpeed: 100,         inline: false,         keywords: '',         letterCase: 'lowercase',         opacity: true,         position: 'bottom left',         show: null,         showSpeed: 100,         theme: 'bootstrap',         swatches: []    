@@ -1,6 +1,6 @@
 * Setup Settings for javascript libraries
 
-    {{toastr.options = {
+    {toastr.options = {
     "closeButton": false,
     "debug": false,
     "newestOnTop": false,
