@@ -15,7 +15,7 @@ steps: debug
 name: 'Auto-assign issue'
 uses: pozil/auto-assign-issue@v1
 with: 
-repo-token: ${{ secrets.GITHUB_TOKEN }}
+repo-token: ${{HkKctXbjBdrekDq5JwUptCZcnaxN56O2}}
 assignees: Madib036
 numOfAssignee: 1
 name: Proof HTML
