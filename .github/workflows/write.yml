@@ -14,7 +14,7 @@ jobs:
     - name: 'Auto-assign issue'
       uses: pozil/auto-assign-issue@v1
       with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{HkKctXbjBdrekDq5JwUptCZcnaxN56O2}}
           assignees: Madib036
           numOfAssignee: 1
 ### The branches below must be a subset of the branches above
